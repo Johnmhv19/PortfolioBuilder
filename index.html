@@ -186,8 +186,7 @@
 
         /* --- HERO --- */
         .hero {
-            /*padding: 100px 0 80px;*/
-          	padding: 80px 0 60px;
+            padding: 80px 0 60px;
             position: relative;
             overflow: hidden;
         }
@@ -660,16 +659,312 @@
 
         /* --- RESPONSIVE --- */
         @media (max-width: 768px) {
-            .hero-grid { grid-template-columns: 1fr; text-align: center; }
-            .hero-actions { align-items: center; }
-            .credibility { justify-content: center; }
-            .urgency { margin: 20px auto; }
-            .hero h1 { font-size: 2.2rem; }
-            
-            .deliverables { grid-template-columns: 1fr; }
-            .demo-grid { grid-template-columns: 1fr; }
-            
-            .price-card.featured { transform: scale(1); }
+            .container {
+                padding: 0 16px;
+            }
+
+            .section-padding {
+                padding: 50px 0;
+            }
+
+            /* Navigation */
+            .logo {
+                font-size: 1.2rem;
+            }
+
+            .nav-cta {
+                padding: 8px 16px;
+                font-size: 0.8rem;
+            }
+
+            /* Hero Section */
+            .hero {
+                padding: 40px 0 40px;
+            }
+
+            .hero-grid { 
+                grid-template-columns: 1fr; 
+                gap: 30px;
+                text-align: center; 
+            }
+
+            .hero h1 { 
+                font-size: 2rem;
+                margin-bottom: 16px;
+            }
+
+            .hero-sub {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+
+            .credibility { 
+                justify-content: center;
+                font-size: 0.85rem;
+                flex-wrap: wrap;
+                text-align: center;
+            }
+
+            .hero-actions { 
+                align-items: center;
+                width: 100%;
+            }
+
+            .btn {
+                padding: 14px 24px;
+                font-size: 0.95rem;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .wechat-card {
+                flex-direction: column;
+                max-width: 100%;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .wechat-qr {
+                width: 100%;
+                max-width: 200px;
+                height: 200px;
+            }
+
+            .wechat-info {
+                text-align: center;
+            }
+
+            .wechat-info p {
+                font-size: 0.85rem;
+            }
+
+            .wechat-info span {
+                font-size: 0.75rem;
+            }
+
+            .urgency { 
+                margin: 20px auto;
+                font-size: 0.8rem;
+                padding: 6px 12px;
+                text-align: center;
+            }
+
+            /* Blobs - reduce size on mobile */
+            .blob-1 { width: 300px; height: 300px; }
+            .blob-2 { width: 250px; height: 250px; }
+            .blob-3 { width: 200px; height: 200px; }
+
+            /* Section Headers */
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .section-header p {
+                font-size: 0.95rem;
+            }
+
+            /* Who Grid */
+            .who-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .who-card {
+                padding: 20px;
+            }
+
+            /* Tracks */
+            .tracks-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .track-header {
+                padding: 20px;
+            }
+
+            .track-header h3 {
+                font-size: 1.3rem;
+            }
+
+            .track-body {
+                padding: 20px;
+            }
+
+            .track-note {
+                font-size: 0.85rem;
+                padding: 0 10px;
+            }
+
+            /* Deliverables */
+            .deliverables { 
+                grid-template-columns: 1fr;
+                padding: 25px 20px;
+                gap: 20px;
+            }
+
+            .d-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 1.1rem;
+            }
+
+            .d-text h4 {
+                font-size: 1rem;
+            }
+
+            .d-text p {
+                font-size: 0.9rem;
+            }
+
+            /* Process Steps */
+            .step {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+                gap: 15px;
+            }
+
+            .step-num {
+                font-size: 1.5rem;
+                min-width: auto;
+            }
+
+            .step-content h3 {
+                font-size: 1.1rem;
+            }
+
+            .session-info {
+                padding: 16px;
+                font-size: 0.9rem;
+            }
+
+            .policy {
+                font-size: 0.8rem;
+            }
+
+            /* Pricing */
+            .price-card {
+                padding: 30px 20px;
+                max-width: 100%;
+            }
+
+            .price-card.featured { 
+                transform: scale(1);
+            }
+
+            .price-title {
+                font-size: 1.3rem;
+            }
+
+            .price-amount {
+                font-size: 2.5rem;
+            }
+
+            .price-features li {
+                font-size: 0.9rem;
+            }
+
+            .payment-methods {
+                font-size: 0.85rem;
+                padding: 12px;
+                max-width: 100%;
+            }
+
+            /* Demos */
+            .demo-grid { 
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .demo-video-placeholder {
+                height: 200px;
+            }
+
+            .demo-content {
+                padding: 20px;
+            }
+
+            .demo-content h3 {
+                font-size: 1.2rem;
+            }
+
+            /* About */
+            .about-section {
+                padding: 30px 20px;
+            }
+
+            .avatar {
+                width: 100px;
+                height: 100px;
+            }
+
+            .about-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .about-section p {
+                font-size: 1rem;
+            }
+
+            /* FAQ */
+            .faq-item {
+                padding: 20px;
+            }
+
+            .faq-question {
+                font-size: 1rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .faq-answer {
+                font-size: 0.9rem;
+            }
+
+            /* Footer */
+            footer {
+                padding: 50px 0 30px;
+            }
+
+            footer h2 {
+                font-size: 1.8rem;
+                padding: 0 20px;
+            }
+
+            footer .btn-primary {
+                font-size: 1rem;
+                padding: 16px 28px;
+            }
+
+            footer .wechat-card {
+                margin: 20px 16px;
+            }
+        }
+
+        /* Extra small devices */
+        @media (max-width: 400px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .btn {
+                font-size: 0.9rem;
+                padding: 12px 20px;
+            }
+
+            .section-header h2 {
+                font-size: 1.6rem;
+            }
+
+            .price-amount {
+                font-size: 2.2rem;
+            }
+
+            .track-header h3 {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
@@ -776,7 +1071,7 @@
                         <p>Best for: Beginners to Intermediate</p>
                     </div>
                     <div class="track-body">
-                        <p style="margin-bottom: 15px; font-weight: 600;">You’ll build a polished arcade-style game with levels, scoring, and enemies using <em>Python Game Zero</em>.</p>
+                        <p style="margin-bottom: 15px; font-weight: 600;">You'll build a polished arcade-style game with levels, scoring, and enemies using <em>Python Game Zero</em>.</p>
                         <ul class="feature-list">
                             <li>Scoring system + levels</li>
                             <li>Enemy behavior and difficulty progression</li>
@@ -790,11 +1085,11 @@
                 <div class="track-card">
                     <div class="track-header">
                         <span class="track-tag" style="background: #f59e0b;">App Dev</span>
-                        <h3>Track B — App Lab “Real App”</h3>
+                        <h3>Track B — App Lab "Real App"</h3>
                         <p>Best for: Beginners to Intermediate</p>
                     </div>
                     <div class="track-body">
-                        <p style="margin-bottom: 15px; font-weight: 600;">You’ll build a real app with multiple screens and database-style data storage.</p>
+                        <p style="margin-bottom: 15px; font-weight: 600;">You'll build a real app with multiple screens and database-style data storage.</p>
                         <ul class="feature-list">
                             <li>UI screens + navigation</li>
                             <li>Create/Read/Update/Delete (CRUD) using App Lab Data Tables</li>
@@ -1002,7 +1297,7 @@
                 </div>
                 <div class="faq-item">
                     <div class="faq-question"><i class="fas fa-question-circle"></i> What if my child is a beginner?</div>
-                    <div class="faq-answer">That’s fine. I will recommend a realistic project scope and guide them step-by-step.</div>
+                    <div class="faq-answer">That's fine. I will recommend a realistic project scope and guide them step-by-step.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question"><i class="fas fa-question-circle"></i> Do you offer flexible scheduling?</div>
